@@ -10,6 +10,7 @@ class BottomNavigetionController extends GetxController{
 
   List<IconData> icons = [
     Icons.home_filled,
+    Icons.favorite,
     Icons.person
   ];
 }

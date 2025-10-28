@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:get/get.dart';
 import 'package:movies_app/app.dart';
+import 'package:movies_app/controller/favorite_controller.dart';
 import 'package:movies_app/services/local_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
-  
+  Get.put(FavoriteController());
   WidgetsFlutterBinding.ensureInitialized();
   await LocalStorageService.instan.init();
 

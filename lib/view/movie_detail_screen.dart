@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:movies_app/components/star_rating.dart';
+import 'package:movies_app/controller/favorite_controller.dart';
 import 'package:movies_app/controller/home_controller.dart';
 import 'package:movies_app/controller/movie_detail_controller.dart';
 import 'package:movies_app/widget/movie_actor_widget.dart';
@@ -10,12 +11,15 @@ class MovieDetailScreen extends StatelessWidget {
   final int movieId;
   final controller = Get.put(MovieDetailController());
   final homeController = Get.find<HomeController>();
+  // final favoriteCtl = Get.put(FavoriteController());
+  final favoriteCtl = Get.find<FavoriteController>();
   MovieDetailScreen({super.key, required this.movieId}) {
     controller.fetchMovieDetail(movieId);
   }
 
   @override
   Widget build(BuildContext context) {
+    controller.fetchMovieDetail(movieId);
     return Scaffold(
       backgroundColor: homeController.isDarkMode ? Colors.black : Colors.white,
       body: _buildBody,
@@ -50,6 +54,7 @@ class MovieDetailScreen extends StatelessWidget {
     return SliverToBoxAdapter(
       child: Obx(() {
         final data = controller.movieDetail;
+        final isFav = favoriteCtl.isFavoriteMovie(data['id'] ?? 0);
         return Padding(
           padding: const EdgeInsets.only(left: 10, right: 10, top: 15),
           child: Column(
@@ -119,23 +124,32 @@ class MovieDetailScreen extends StatelessWidget {
                     clipBehavior: Clip.none,
                     height: 40,
                     decoration: BoxDecoration(
-                        color: Colors.grey[850],
+                        color: isFav ? Colors.red : Colors.grey[850],
                         borderRadius: BorderRadius.circular(15)),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
-                        spacing: 5,
-                        children: [
-                          Text(
-                            "Save",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          Icon(
-                            Icons.save,
-                            size: 20,
-                            color: Colors.white,
-                          )
-                        ],
+                      child: GestureDetector(
+                        onTap: (){
+                          if(isFav){
+                            favoriteCtl.removeFavoriteMovie(data['id'] ?? 0);
+                          }else{
+                            favoriteCtl.addFavoriteMovie(Map<String, dynamic>.from(data));
+                          }
+                        },
+                        child: Row(
+                          spacing: 5,
+                          children: [
+                            Text(
+                              "Favorite",
+                              style:isFav? TextStyle(fontWeight: FontWeight.bold) : TextStyle(color:Colors.white),
+                            ),
+                            Icon(
+                               isFav? Icons.favorite : Icons.favorite_border,
+                              size: 20,
+                              color: Colors.white,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:movies_app/controller/main_controller.dart';
+import 'package:movies_app/view/favorite_screen.dart';
 import 'package:movies_app/view/home_screen.dart';
 import 'package:movies_app/view/profile_screen.dart';
 import 'package:movies_app/widget/bottom_navigation_bar_widget.dart';
@@ -13,6 +14,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> screen = [
       HomeScreen(),
+      FavoriteScreen(),
       ProfileScreen()
     ];
     return Obx(() => Scaffold(
