@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## DARK LIGHT
 <p float="left">
-    <img src="assetss/screenshots/light/l_splash_screen.png" width="250" />
+    <img src="assets/screenshots/light/l_splash.png" width="250" />
     <img src="assets/screenshots/light/l_sign_in.png" width="250" />
     <img src="assets/screenshots/light/l_sign_up.png" width="250" />
     <img src="assets/screenshots/light/l_home.png" width="250" />
@@ -45,5 +45,5 @@ samples, guidance on mobile development, and a full API reference.
     <img src="assets/screenshots/dark/d_search2.png" width="250" />
     <img src="assets/screenshots/dark/d_detail1.png" width="250" />
     <img src="assets/screenshots/dark/d_detail2.png" width="250" />
-    <img src="assets/screenshots/dark/d_filtter.png" width="250" />
+    <img src="assets/screenshots/dark/d_filter.png" width="250" />
 </p>
