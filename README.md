@@ -19,31 +19,31 @@ samples, guidance on mobile development, and a full API reference.
 
 ## DARK LIGHT
 <p float="left">
-    <img src="asset/screenshots/light/l_splash_screen" width="250" />
-    <img src="asset/screenshots/light/l_sign_in" width="250" />
-    <img src="asset/screenshots/light/l_sign_up" width="250" />
-    <img src="asset/screenshots/light/l_home" width="250" />
-    <img src="asset/screenshots/light/l_favorite" width="250" />
-    <img src="asset/screenshots/light/l_profile" width="250" />
-    <img src="asset/screenshots/light/l_search1" width="250" />
-    <img src="asset/screenshots/light/l_search2" width="250" />
-    <img src="asset/screenshots/light/l_detail1" width="250" />
-    <img src="asset/screenshots/light/l_detail2" width="250" />
-    <img src="asset/screenshots/light/l_filtter" width="250" />
+    <img src="assetss/screenshots/light/l_splash_screen" width="250" />
+    <img src="assets/screenshots/light/l_sign_in" width="250" />
+    <img src="assets/screenshots/light/l_sign_up" width="250" />
+    <img src="assets/screenshots/light/l_home" width="250" />
+    <img src="assets/screenshots/light/l_favorite" width="250" />
+    <img src="assets/screenshots/light/l_profile" width="250" />
+    <img src="assets/screenshots/light/l_search1" width="250" />
+    <img src="assets/screenshots/light/l_search2" width="250" />
+    <img src="assets/screenshots/light/l_detail1" width="250" />
+    <img src="assets/screenshots/light/l_detail2" width="250" />
+    <img src="assets/screenshots/light/l_filtter" width="250" />
 </p>
 
 
 ## DARK MODE
 <p float="left">
-    <img src="asset/screenshots/dark/d_splash_screen" width="250" />
-    <img src="asset/screenshots/dark/d_sign_in" width="250" />
-    <img src="asset/screenshots/dark/d_sign_up" width="250" />
-    <img src="asset/screenshots/dark/d_home" width="250" />
-    <img src="asset/screenshots/dark/d_favorite" width="250" />
-    <img src="asset/screenshots/dark/d_profile" width="250" />
-    <img src="asset/screenshots/dark/d_search1" width="250" />
-    <img src="asset/screenshots/dark/d_search2" width="250" />
-    <img src="asset/screenshots/dark/d_detail1" width="250" />
-    <img src="asset/screenshots/dark/d_detail2" width="250" />
-    <img src="asset/screenshots/dark/d_filtter" width="250" />
+    <img src="assets/screenshots/dark/d_splash_screen" width="250" />
+    <img src="assets/screenshots/dark/d_sign_in" width="250" />
+    <img src="assets/screenshots/dark/d_sign_up" width="250" />
+    <img src="assets/screenshots/dark/d_home" width="250" />
+    <img src="assets/screenshots/dark/d_favorite" width="250" />
+    <img src="assets/screenshots/dark/d_profile" width="250" />
+    <img src="assets/screenshots/dark/d_search1" width="250" />
+    <img src="assets/screenshots/dark/d_search2" width="250" />
+    <img src="assets/screenshots/dark/d_detail1" width="250" />
+    <img src="assets/screenshots/dark/d_detail2" width="250" />
+    <img src="assets/screenshots/dark/d_filtter" width="250" />
 </p>
