@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## 📱 App UI Screenshots
 
-## DARK LIGHT
+## LIGHT MODE
 <p float="left">
     <img src="assets/screenshots/light/l_splash.png" width="250" />
     <img src="assets/screenshots/light/l_sign_in.png" width="250" />
