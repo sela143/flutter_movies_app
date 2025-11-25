@@ -60,7 +60,7 @@ class SearchScreen extends StatelessWidget {
     return Obx((){
       if (controller.isLoading.value || filterMoive.isLoading.value) {
             return const Center(child: CircularProgressIndicator());
-          }
+      }
         if(controller.searchCtl.text.isEmpty){
           if(filterMoive.filterMovie.isEmpty){
             return const Center(child: Text("Search for a movie",
